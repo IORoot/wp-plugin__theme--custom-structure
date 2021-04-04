@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name:  ANDYP - Custom Theme Structure
+Plugin Name:  _ANDYP - Custom Theme Structure
 Plugin URI:   https://wordpress.stackexchange.com/a/312159/110572
 Description:  Page Template with page-{slug}.php to a Sub Directory
 Version:      1.0.0
