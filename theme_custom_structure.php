@@ -8,7 +8,7 @@ Author:       Andy Pearson
 */
 
 // defining the sub-directory so that it can be easily accessed from elsewhere as well.
-define( 'ANDYP_THEME_STRUCTURE', 'src/templates' );
+define( 'ANDYP_THEME_STRUCTURE', 'src/views' );
 
 
 function andyp_theme_structure( $templates = array() ) {
@@ -40,15 +40,6 @@ function andyp_theme_structure( $templates = array() ) {
     foreach( $page_templates as $key => $value)
     {
         $page_templates[$key] = $value . '/' . $templates[$page_template_index];
-    }
-
-    // As of WordPress 4.7, the URL decoded page-{$slug}.php template file is included in the
-    // page template hierarchy just before the URL encoded page-{$slug}.php template file.
-    // Also, WordPress always keeps the page id different from page slug. So page-{slug}.php will
-    // always be different from page-{id}.php, even if you try to input the {id} as {slug}.
-    // So this check will work for WordPress versions prior to 4.7 as well.
-    if( $templates[$page_template_index] === urldecode( $templates[$page_template_index + 1] ) ) {
-        $page_templates[] = ANDYP_THEME_STRUCTURE . '/' . $templates[$page_template_index + 1];
     }
 
     // Insert new entries.    
