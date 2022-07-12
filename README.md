@@ -8,7 +8,7 @@
 <h3 align="center">Custom Theme Structures</h3>
 
 <p align="center">
-Allows you to create theme files in sub-directories. Page Template with `page-{slug}.php` to a Sub Directory
+Allows you to create theme files in sub-directories. Page Template with page-slug.php to a Sub Directory
 </p>
 </div>
 
@@ -29,15 +29,7 @@ Allows you to create theme files in sub-directories. Page Template with `page-{s
 
 ##  2. <a name='AboutTheProject'></a>About The Project
 
-This simple plugin allows you to create sub-directories in your theme folder for your theme files.
-
-In your theme root, create `src/views` folder.
-
-You can now add any `page-{slug}.php` files in that folder instead of the root of the theme. This cleans up the root.
-
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 ###  2.1. <a name='BuiltWith'></a>Built With
 
@@ -71,7 +63,11 @@ These are the steps to get up and running with this plugin.
 
 ##  3. <a name='Usage'></a>Usage
 
+This simple plugin allows you to create sub-directories in your theme folder for your theme files.
 
+In your theme root, create `src/views` folder.
+
+You can now add any `page-{slug}.php` files in that folder instead of the root of the theme. This cleans up the root.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
